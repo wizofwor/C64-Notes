@@ -4,8 +4,6 @@ Welcome dear fellows of mighty 64. Here I'm sharing my work notes on assembly. P
 
 If you need further technical details I suggest codebase64.org
 
-Simple examples of 6510 Assembly
-
 
 ## Notes
 
