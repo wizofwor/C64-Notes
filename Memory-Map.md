@@ -4,8 +4,7 @@ Default memory map of Commodore 64 priorites BASIC usage. However it is highly c
 
 |  ADRESS 	| C64 Memory Map      |VIC Banks | $0001
 |-----------|---------------------|----------|------
-|$F000-$FFFF|	KERNAL ROM	        | Bank 3   | Bit #1
-|$E000-$EFFF|	KERNAL ROM         |  "        | "
+|$E000-$FFFF|	KERNAL ROM	        | Bank 3   | Bit #1
 |$D000-$DFFF|	CHAR ROM / IO	      | "        | Bit #2
 |$C000-$CFFF|	Free	              | "    |
 |$A000-$BFFF|	BASIC ROM           | Bank 2    | Bit #0
