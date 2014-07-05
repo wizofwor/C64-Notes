@@ -11,15 +11,16 @@ lda $dd00   ;change banks
 and #$fc
 ora #$xx    ; xx = bank
 sta $dd00
-
-$xx Bank Adress Range 
-$00  3*  $C000-$FFFF
-$01  2   $8000-$BFFF
-$02  1*  $4000-$7FFF
-$03  0   $0000-$3FFF (Default value)
-*rom character set is not available in these banks
 ```
+$dd00 | Bank | Adress Range 
+---|---|---
+%xxxxxx00 | -3*|  $C000-$FFFF
+%xxxxxx01 | 2 | $8000-$BFFF
+%xxxxxx10 | 1*|  $4000-$7FFF
+%xxxxxx11 | 0 |  $0000-$3FFF (Default value)
+*rom character set is not available in these banks
 
+Do not forget, certain regions of Commodore 64 memory are used by ROM by default. If you want to utilise the adress range already occupied by ROM as RAM, you should disable ROM. Consult [memory map](https://github.com/wizofwor/C64-Notes/blob/master/Memory-Map.md) to see overlying Rom fields.
 
 ### SCREEN_RAM
 
