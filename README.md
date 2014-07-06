@@ -7,14 +7,14 @@ If you need further technical details I suggest codebase64.org
 ---
 
 
-## Notes
+### Notes
 
 + [C64 Memory Map](https://github.com/wizofwor/C64-Notes/blob/master/Memory-Map.md) A simplified memory map for C64
 + [VIC Memory Pointers](https://github.com/wizofwor/C64-Notes/blob/master/Memory-locations-used-by-VIC.md) VIC Memory pointers and corresponding memory areas
 + [Screen Modes](https://github.com/wizofwor/C64-Notes/blob/master/Screen-modes.md) Built in screen modes
 + [Branches](https://github.com/wizofwor/C64-Notes/blob/master/Branches.md) Branch and comparison insturictions
  
-## Code Examples
+### Code Examples
 
 + You can find code examples on my other repo [C64 assembly examples](https://github.com/wizofwor/C64-assembly-examples)
 
