@@ -11,9 +11,9 @@ $d014 | Lightpen Y
 
 $d011
 
-> bit 0-3: Vertical Scrool
-> bit 3: RSEL
-> bit 4: DEN
-> bit 5: BMM
-> bit 6: ECM
-> bit 7: RST8
+> bit 0-3: Vertical Scrool  
+> bit 3: RSEL  
+> bit 4: DEN  
+> bit 5: BMM  
+> bit 6: ECM  
+> bit 7: RST8  
