@@ -6,6 +6,15 @@ Screen size is 40x25 char or 320 x 200 pixels
 $d011 bit 5 controls bitmap mode
 $d016 bit 4 controls multi color mode
 
+Such that:
+
+Screen Mode | $d011 | $d016
+---|---|---
+Hires text mode | $1b | $08
+Multicolor text mode | $1b | $18
+Hires bitmap mode | $3b | $08
+Multicolor bitmap mode | $3b | $18
+ECM text mode | $5b | $08
 
 1.  Hires Text Mode:
 
@@ -36,6 +45,7 @@ $d016 bit 4 controls multi color mode
    11xxxxxx        bg #3 $d024
 
 4. Hires Bitmap Mode
+   
    instead of color_ram, screen_ram is now used for color information
    and charater_ram used to hold bitmap data
   
