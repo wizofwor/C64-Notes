@@ -1,4 +1,5 @@
 Sprite-MC
+
 Bit | Color | Adress
 ---|---|---
 00 | Background |$D021
