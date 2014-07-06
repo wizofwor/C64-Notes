@@ -28,11 +28,7 @@ BVC  | Branch on oVerflow Clear|    V = 0
 ## Compare Instructions
 
 
-CMP compares memory and accumulator
-CPX compares memory and X
-CPY compares memory and Y
-
-Take look at `CMP $xxxx`:
+CMP compares memory and accumulator. CPX and CPY do the same thing for X and Y registers. Take look at following table:
 
 Comparison | N | Z | C
 ---|---|---|---|---
