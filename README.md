@@ -9,7 +9,7 @@ If you need further technical details I suggest codebase64.org
 
 + [C64 Memory Map](https://github.com/wizofwor/C64-Notes/blob/master/Memory-Map.md) A simplified memory map for C64
 + [VIC Memory Pointers](https://github.com/wizofwor/C64-Notes/blob/master/Memory-locations-used-by-VIC.md) VIC Memory pointers and corresponding memory areas
-+ [Screem Modes](https://github.com/wizofwor/C64-Notes/blob/master/Screen-modes.md) Built in screen modes
++ [Screen Modes](https://github.com/wizofwor/C64-Notes/blob/master/Screen-modes.md) Built in screen modes
  
 ## Code Examples
 
