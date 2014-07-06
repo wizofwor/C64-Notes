@@ -1,9 +1,6 @@
-+---------------------------------------------+
-| VIC II Screen Modes                         |
-|                                             |
-| *based on c64 Programmers Referance         |
-+---------------------------------------------+
 
+# VIC II Screen Modes                         
+## *based on c64 Programmers Referance        
 
 Screen size is 40x25 char or 320 x 200 pixels
 $d011 bit 5 controls bitmap mode
