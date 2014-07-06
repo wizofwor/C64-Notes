@@ -4,7 +4,8 @@
 
 JMP - Jumps to another location  
 JSR - Jump to a subroutine  
-RTS - Returns from a subroutine
+RTS - Returns from subroutine  
+RTI - REturn from interrupt
 
 ## Conditional Branch Instructions
 
