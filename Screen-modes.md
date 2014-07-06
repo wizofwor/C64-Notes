@@ -7,7 +7,7 @@ $d011 bit 5 controls bitmap mode
 $d016 bit 4 controls multi color mode
 
 
-1)  Hires Text Mode:
+##1)  Hires Text Mode:
     
   This is the default mode
   screen is filled by characters described by screen_ram ($0400)  
@@ -17,7 +17,7 @@ $d016 bit 4 controls multi color mode
   1 -> color ram
 
 
-2) Multicolor Text Mode
+##2) Multicolor Text Mode
   
   bit pairs on character rom determines a pixel such that 
   00 -> background #0 $d021
@@ -26,7 +26,7 @@ $d016 bit 4 controls multi color mode
   11 -> color ram
 
 
-3) ECM Text Mode
+##3) ECM Text Mode
 
   Gives more control over the background colors but limited to 64 chars.
   
@@ -36,12 +36,12 @@ $d016 bit 4 controls multi color mode
   10xxxxxx        bg #2 $d023
   11xxxxxx        bg #3 $d024
 
-4) Hires Bitmap Mode
+##4) Hires Bitmap Mode
   instead of color_ram, screen_ram is now used for color information
   and charater_ram used to hold bitmap data
   
 
-5) Multicolor Bitmap Mode
+##5) Multicolor Bitmap Mode
 
   bit pairs represents pixel 
   00 -> bg #0 ($d021)
