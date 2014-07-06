@@ -37,4 +37,8 @@ accumulator = memory | 0 | 1 | 1
 accumulator > memory | 0 | 0 | 1 
 
    
-BIT  - test BITs
+BIT compares memory with accumulator. Actually it perform AND operation between accumulator and memory but doesn't manupulate neither. Only status flags are effected.
+
++ N receives the initial value of memory bit 7.
++ V receives the initial value of memory bit 6.
++ Z is set when the result of the AND is zero, otherwise reset
