@@ -28,8 +28,17 @@ BVC  | Branch on oVerflow Clear|    V = 0
 ## Compare Instructions
 
 
-CMP  - CoMPare memory and accumulator
-CPX  - ComPare memory and X
-CPY  - ComPare memory and Y
+CMP compares memory and accumulator
+CPX compares memory and X
+CPY compares memory and Y
+
+Take look at `CMP $xxxx`:
+
+Comparison | N | Z | C
+---|---|---|---|---
+accumulator < memory | 1 | 0 | 0
+accumulator = memory | 0 | 1 | 1
+accumulator > memory | 0 | 0 | 1 
+
    
 BIT  - test BITs
