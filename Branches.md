@@ -43,3 +43,34 @@ accumulator > memory | 0 | 0 | 1
 + N receives the initial value of memory bit 7.
 + V receives the initial value of memory bit 6.
 + Z is set when the result of the AND is zero, otherwise reset
+
+Simple joystick control rutine with **bit** and **bne**
+```asm
+cont1    lda #%00000001 ; bit mask for up
+         bit $dc00      ; compare with $dc00
+         bne cont2      ; no movement up -> jump to next control
+         jsr goUp       ; branch to subroutine
+
+cont2    lda #%00000010 ; bit mask for down
+         bit $dc00      ; compare with $dc00
+         bne cont3      ; no movement down -> jump to next control
+         jsr goDown     ; branch to subroutine
+
+cont3    lda #%00000100 ; bit mask for left
+         bit $dc00      ; compare with $dc00
+         bne cont4      ; no movement left -> jump to next control
+         jsr goLeft     ; branch to subroutine
+
+cont4    lda #%00001000 ; bit mask for right
+         bit $dc00      ; compare with $dc00
+         bne cont5      ; no movement right -> jump to next control
+         jsr goRight    ; branch to subroutine
+         
+cont5    lda #%00010000 ; bit mask for fire
+         bit $dc00      ; compare with $dc00
+         bne cont1      ; fire not pressed -> start over
+         jsr doFire     ; branch to subrutine
+         
+         jmp cont1      ; start over
+```
+
