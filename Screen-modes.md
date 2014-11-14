@@ -28,10 +28,10 @@ ECM text mode | $5b | $08
 
 2. Multicolor Text Mode
   
-   bit pairs on character rom determines a pixel such that 
-   00 -> background #0 $d021
-   01 -> background #1 $d022
-   10 -> background #2 $d023
+   bit pairs on character rom determines a pixel such that  
+   00 -> background #0 $d021  
+   01 -> background #1 $d022  
+   10 -> background #2 $d023  
    11 -> color ram
 
 3. ECM Text Mode
