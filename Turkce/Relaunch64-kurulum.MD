@@ -16,11 +16,29 @@ Hemen komut istemcisine geçip `d:\acme –V` yazarak kontrol ediyorum.
 
 ```MSDOS
 This is Acme, Relase 0.93 (“Zarquon”), 11 Oct 2006
-   Ported to Windows by Martin Piper```
+   Ported to Windows by Martin Piper
+```
 Yanıtını aldığıma göre doğru şekilde çalışıyor.
 Relaunch’a geçiyorum
 Option / Pref / Compile&Run’a geliyorum. Buradaki betiği allataki gibi değitirip update script diyorum.
-```D:\acme.exe --format cbm SOURCEFILE
-D:\7DX\WinVICE-2.2-x64\x64.exe OUTFILE```
+```MSDOS
+D:\acme.exe --format cbm SOURCEFILE
+D:\7DX\WinVICE-2.2-x64\x64.exe OUTFILE
+```
+
+### Test
+Geliştirme ortamım artık hazır. Aşağıda kodu çalıştırarak test ediyorum. 
+
+```ASM
+!to"raster.prg",cbm  	
+
+	* = $0801
+	!byte $0b, $08, $00, $00, $9e, $32, $30, $36, $31, $00, $00, $00
+
+	*=$080d
+
+-	inc $d020
+	jmp -			
+```
 
 
