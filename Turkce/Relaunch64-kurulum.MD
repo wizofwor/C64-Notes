@@ -1,7 +1,7 @@
 # Relaunch64 kurulumu
 
 Relaunch64 IDE bizlere oldukça pratik bir geliştirme ortamı sunuyor. Bu dökümanda yeni başlayanlar için kurulum adımlarını basitçe anlatmaya çalıştım.
-Şimdilik ihtiyaç olmadığını düşünerek cruncher eklemiyorum. Daha sonra crunher da aynı sisteme dahil edilebilir.  
+Şimdilik ihtiyaç olmadığını düşünerek cruncher eklemiyorum. Daha sonra cruncher da aynı sisteme dahil edilebilir.  
 
 ### Tedarik
 
