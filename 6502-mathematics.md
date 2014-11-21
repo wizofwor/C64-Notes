@@ -1,12 +1,13 @@
 //following code might me incomplete
 
 ###Add with Carry
-
+```ASM
   LDA $0400 
   CLC         ;clear carry  
   ADC #$xx 
   STA $0400
-  BRK 
+  BRK
+```
 
 ###Subtract with Carry
 
