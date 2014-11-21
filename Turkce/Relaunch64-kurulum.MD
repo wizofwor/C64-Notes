@@ -14,7 +14,8 @@ http://codebase64.org/doku.php?id=base:crossdev adresinden ACME093 win32 binary 
 
 Hemen komut istemcisine geçip `d:\acme –V` yazarak kontrol ediyorum.
 
-```This is Acme, Relase 0.93 (“Zarquon”), 11 Oct 2006
+```MSDOS
+This is Acme, Relase 0.93 (“Zarquon”), 11 Oct 2006
    Ported to Windows by Martin Piper```
 Yanıtını aldığıma göre doğru şekilde çalışıyor.
 Relaunch’a geçiyorum
