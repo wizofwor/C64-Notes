@@ -6,7 +6,7 @@ Relaunch64 IDE bizlere oldukça pratik bir geliştirme ortamı sunuyor. Bu dök�
 ### Tedarik
 
 http://www.popelganda.de/relaunch64.html adresinden Realunch64 Windows versiyonunu indiriyoruz.
-http://codebase64.org/doku.php?id=base:crossdev adresinden ACME093 win32 binary dosyasını indiriyoruz.
+http://codebase64.org/doku.php?id=base:crossdev adresinden ACME093 win32 binary dosyasını indiriyoruz.  
 Bunlar bize şimdilik yeterli olacak.
 
 ### Kurulum
