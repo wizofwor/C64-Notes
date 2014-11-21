@@ -27,7 +27,7 @@ D:\7DX\WinVICE-2.2-x64\x64.exe OUTFILE
 ```
 
 ### Test
-Geliştirme ortamım artık hazır. Aşağıda kodu çalıştırarak test ediyorum. 
+Geliştirme ortamı artık hazır. Son olarak aşağıki kodu çalıştırarak test ediyorum. PRG dosyası doğru bir şekilde yüklenip çalıştığına göre her şey tamam. 
 
 ```ASM
 !to"raster.prg",cbm  	
@@ -40,5 +40,5 @@ Geliştirme ortamım artık hazır. Aşağıda kodu çalıştırarak test ediyor
 -	inc $d020
 	jmp -			
 ```
-
+Ufak bir not: asm dosyasının adı kodun içinde belirtilen prg dosyasının adı farklı olursa dosya VICE'a ulaşmıyor. Örneğin yukarıdaki dosyayı `raster.asm` adıyla kaydetmek lazım.
 
