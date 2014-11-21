@@ -7,6 +7,7 @@ Relaunch64 IDE bizlere oldukça pratik bir geliştirme ortamı sunuyor. Bu dök�
 
 http://www.popelganda.de/relaunch64.html adresinden Realunch64 Windows versiyonunu indiriyoruz.
 http://codebase64.org/doku.php?id=base:crossdev adresinden ACME093 win32 binary dosyasını indiriyoruz.
+Bunlar bize şimdilik yeterli olacak.
 
 ### Kurulum
 
@@ -20,7 +21,7 @@ This is Acme, Relase 0.93 (“Zarquon”), 11 Oct 2006
 ```
 Yanıtını aldığıma göre doğru şekilde çalışıyor.
 Relaunch’a geçiyorum
-Option / Pref / Compile&Run’a geliyorum. Buradaki betiği allataki gibi değitirip update script diyorum.
+Option / Pref / Compile&Run’a geliyorum. Buradaki betiği alattaki gibi değiştirip update script diyorum.
 ```MSDOS
 D:\acme.exe --format cbm SOURCEFILE
 D:\7DX\WinVICE-2.2-x64\x64.exe OUTFILE
@@ -40,5 +41,4 @@ Geliştirme ortamı artık hazır. Son olarak aşağıki kodu çalıştırarak t
 -	inc $d020
 	jmp -			
 ```
-Ufak bir not: asm dosyasının adı kodun içinde belirtilen prg dosyasının adı farklı olursa dosya VICE'a ulaşmıyor. Örneğin yukarıdaki dosyayı `raster.asm` adıyla kaydetmek lazım.
 
