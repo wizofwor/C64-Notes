@@ -3,7 +3,7 @@
 6502 ve türevlerinde Statü Yazmacı'nın (Status Register = SR) 7 biti birer bayrağa işaret eder. 5'inci bit boştur.
 
 7|6|5|4|3|2|1|0
--|-|-|-|-|-|-|-
+---|---|---|---|---|---|---|---
 N|V|-|B|D|I|Z|C
 
 Z,C,N ve V bayrakları karşılaştırma komutlarıyla birlikte kullanılırlar. 
