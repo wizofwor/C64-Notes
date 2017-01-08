@@ -37,13 +37,6 @@ accumulator < memory | 1 | 0 | 0
 accumulator = memory | 0 | 1 | 1
 accumulator > memory | 0 | 0 | 1 
 
-   
-**BIT** compares memory with accumulator. Actually it perform AND operation between accumulator and memory but doesn't manupulate neither. Only status flags are effected.
-
-+ N receives the initial value of memory bit 7.
-+ V receives the initial value of memory bit 6.
-+ Z is set when the result of the AND is zero, otherwise reset
-
 ##How Compare Instructions and Conditional Branching are Used Together
 
 TEST | Compare Inst. | Branch Inst.
@@ -53,6 +46,37 @@ Acc <> VAL | CMP #VAL | BNE
 Acc >= VAL | CPM #VAL | BCS
 Acc > VAL | CPM #VAL	| BEQ & BCS
 Acc < VAL | CMP #VAL | BCC
+
+##The BIT Instruction
+**BIT** compares memory with accumulator. Actually it perform AND operation between accumulator and memory but doesn't manupulate neither. Only the status flags are effected.
+
++ N receives the initial value of memory bit 7.
++ V receives the initial value of memory bit 6.
++ Z is set when the result of the AND is zero, otherwise reset
+
+If you want to test bit 3 of the memory location use use:
+
+```
+lda #%00001000
+bit ADDR
+beq test
+```
+
+If you want to test bit 7 of ADDR there is no need to load accumulator.
+
+```
+bit ADDR
+bmi	test (or bpl)
+```
+is enough
+
+Smiliarly if you want to test bit 6 of ADDR:
+
+```
+bit ADDR
+bvc test ; or bvs
+```
+is enough.
 
 
 ##Example
