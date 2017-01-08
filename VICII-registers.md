@@ -11,9 +11,25 @@ $d014 | Lightpen Y
 
 $d011
 
-> bit 0-3: Vertical Scrool  
-> bit 3: RSEL  
-> bit 4: DEN  
-> bit 5: BMM  
-> bit 6: ECM  
-> bit 7: RST8  
+ 7 | 6 | 5 | 4 | 3 | 2 - 0
+---|---|---|---|---|---|---|---
+RST8 | ECM | BMM | DEN | RSEL |  YSCROLL
+
+* YSCROLL: Vertical scroll
+* RSEL: Text mode rows 24/25
+* DEN:  Blank screen (when off)
+* BMM:  Enable bitmap mode
+* BMM:  Enable bitmap mode
+* ECM:  Enable extended color text mode
+* RST8: MSB of raster control register
+
+$d016
+
+ 7 | 6 | 5 | 4 | 3 | 2 - 0
+---|---|---|---|---|---|---|---
+-  | -  | RES | MCM | CSEL | XSCROLL 
+
+* XSCROLL: Horizonal scrol
+* CSEL:  Text mode columnts 38/40
+* MCM:  Enable multicolor mode
+* RES:  Reset VIC
