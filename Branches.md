@@ -44,7 +44,21 @@ accumulator > memory | 0 | 0 | 1
 + V receives the initial value of memory bit 6.
 + Z is set when the result of the AND is zero, otherwise reset
 
+##How Compare Instructions and Conditional Branching are Used Together
+
+TEST | Compare Inst. | Branch Inst.
+---|---|---
+Acc = VAL | CMP #VAL | BEQ
+Acc <> VAL | CMP #VAL | BNE
+Acc >= VAL | CPM #VAL | BCS
+Acc > VAL | CPM #VAL	| BEQ & BCS
+Acc < VAL | CMP #VAL | BCC
+
+
+##Example
+
 Simple joystick control rutine with **bit** and **bne**
+
 ```asm
 cont1    lda #%00000001 ; bit mask for up
          bit $dc00      ; compare with $dc00

@@ -14,10 +14,11 @@ sta $dd00
 ```
 $dd00 | Bank | Adress Range 
 ---|---|---
-%xxxxxx00 | -3*|  $C000-$FFFF
-%xxxxxx01 | 2 | $8000-$BFFF
-%xxxxxx10 | 1*|  $4000-$7FFF
-%xxxxxx11 | 0 |  $0000-$3FFF (Default value)
+%xxxxxx00 | -3* | $C000-$FFFF
+%xxxxxx01 | 2   | $8000-$BFFF
+%xxxxxx10 | 1*  |  $4000-$7FFF
+%xxxxxx11 | 0   |  $0000-$3FFF (Default value)
+
 *rom character set is not available in these banks
 
 Do not forget, certain regions of Commodore 64 memory are used by ROM by default. If you want to utilise the adress range already occupied by ROM as RAM, you should disable ROM. Consult [memory map](https://github.com/wizofwor/C64-Notes/blob/master/Memory-Map.md) to see overlying Rom fields.
@@ -38,6 +39,7 @@ $D018 Value | Screen Ram | $D018 Value | Screen Ram
 %0101xxxx | $1400 | %1101xxxx | $3400
 %0110xxxx | $1800 | %1110xxxx | $3800
 %0111xxxx | $1c00 | %1111xxxx | $3c00
+
 *default
 
 ### COLOR_RAM
@@ -60,4 +62,5 @@ $d018 |Character Memory
 %xxxx101x | $2800 - $2fff
 %xxxx110x | $3000 - $37ff
 %xxxx111x | $3800 - $3fff
+
 *Rom image in bank 0 and 1 (default)
