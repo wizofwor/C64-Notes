@@ -6,7 +6,7 @@ If you need further technical details I suggest [codebase64.org](codebase64.org)
 
 ---
 ### Notes on 6502 Assembly Instructions
-+ [Branches](https://github.com/wizofwor/C64-Notes/blob/master/Branches.md) Branch and comparison instructions
++ [Branches](https://github.com/wizofwor/C64-Notes/blob/master/notes/Branches.md) Branch and comparison instructions
 
 ### Notes on Commodore 64 Hardware
 
